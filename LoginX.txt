@@ -1,0 +1,772 @@
+local LoginX = Instance.new("ScreenGui")
+local LoginXMain = Instance.new("ImageLabel")
+local LoginXBottom = Instance.new("ImageLabel")
+local LoginUserIDText = Instance.new("TextLabel")
+local LoginUsernameText = Instance.new("TextLabel")
+local LoginUsernameBar = Instance.new("Frame")
+local LoginUserIDBar = Instance.new("Frame")
+local LoginUsername = Instance.new("TextLabel")
+local LoginUserID = Instance.new("TextLabel")
+local LoginKeyText = Instance.new("TextLabel")
+local LoginKeyBar = Instance.new("Frame")
+local LoginKey = Instance.new("TextButton")
+local PassButtonCont = Instance.new("ImageLabel")
+local PassButton = Instance.new("TextButton")
+local LoginLightEffect = Instance.new("Frame")
+local TextBoxContainer = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextBoxBarBack = Instance.new("ImageLabel")
+local TextBoxBarRed = Instance.new("ImageLabel")
+local TextBoxText = Instance.new("TextLabel")
+local Games = Instance.new("ImageLabel")
+local AvailableGames = Instance.new("TextLabel")
+local AvailableGamesBar = Instance.new("Frame")
+local Game1 = Instance.new("TextLabel")
+local Game1OK = Instance.new("ImageLabel")
+local Game2 = Instance.new("TextLabel")
+local Game2OK = Instance.new("ImageLabel")
+local Game3 = Instance.new("TextLabel")
+local Game3WO = Instance.new("ImageLabel")
+local InfoActualGame = Instance.new("TextLabel")
+local Changelog = Instance.new("ImageLabel")
+local ChangelogHeader = Instance.new("ImageLabel")
+local HeaderBottom = Instance.new("Frame")
+local HeaderImage = Instance.new("ImageLabel")
+local OnOffChangelog = Instance.new("Frame")
+local ChangelogText = Instance.new("TextLabel")
+local Change1 = Instance.new("TextLabel")
+local GamesButton = Instance.new("ImageLabel")
+local GamesButtonText = Instance.new("TextButton")
+local Human = Instance.new("ImageLabel")
+local Shark = Instance.new("ImageLabel")
+local LoginNotif = Instance.new("ImageLabel")
+local LoginNotifBottom = Instance.new("ImageLabel")
+local LoginBottomNormal = Instance.new("Frame")
+local NotifLogo = Instance.new("Frame")
+local KillerXLogo = Instance.new("ImageLabel")
+local UIGradient = Instance.new("UIGradient")
+local NotifPress = Instance.new("TextLabel")
+local CTRLLogo = Instance.new("ImageLabel")
+local NotifTitle = Instance.new("TextLabel")
+local NotifInfo = Instance.new("TextLabel")
+ 
+LoginX.Name = "LoginX"
+LoginX.Parent = game.CoreGui
+
+LoginXMain.Name = "LoginXMain"
+LoginXMain.Parent = LoginX
+LoginXMain.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginXMain.BackgroundTransparency = 1
+LoginXMain.Position = UDim2.new(0.432999998, 0, 1.10000002, 0)
+LoginXMain.Size = UDim2.new(0, 206, 0, 50)
+LoginXMain.Image = "rbxassetid://3570695787"
+LoginXMain.ImageColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+LoginXMain.ScaleType = Enum.ScaleType.Slice
+LoginXMain.SliceCenter = Rect.new(100, 100, 100, 100)
+LoginXMain.SliceScale = 0.06
+
+LoginXBottom.Name = "LoginXBottom"
+LoginXBottom.Parent = LoginXMain
+LoginXBottom.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginXBottom.BackgroundTransparency = 1
+LoginXBottom.Position = UDim2.new(0, 0, 1.17999995, 0)
+LoginXBottom.Size = UDim2.new(0, 206, 0, 162)
+LoginXBottom.Image = "rbxassetid://3570695787"
+LoginXBottom.ImageColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+LoginXBottom.ScaleType = Enum.ScaleType.Slice
+LoginXBottom.SliceCenter = Rect.new(100, 100, 100, 100)
+LoginXBottom.SliceScale = 0.06
+
+LoginUserIDText.Name = "LoginUserIDText"
+LoginUserIDText.Parent = LoginXBottom
+LoginUserIDText.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginUserIDText.BackgroundTransparency = 1
+LoginUserIDText.BorderSizePixel = 0
+LoginUserIDText.Position = UDim2.new(0.393589109, 0, 0.339506179, 0)
+LoginUserIDText.Size = UDim2.new(0, 42, 0, 21)
+LoginUserIDText.Font = Enum.Font.GothamSemibold
+LoginUserIDText.Text = "UserID"
+LoginUserIDText.TextColor3 = Color3.new(1, 1, 1)
+LoginUserIDText.TextSize = 14
+
+LoginUsernameText.Name = "LoginUsernameText"
+LoginUsernameText.Parent = LoginXBottom
+LoginUsernameText.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginUsernameText.BackgroundTransparency = 1
+LoginUsernameText.BorderSizePixel = 0
+LoginUsernameText.Position = UDim2.new(0.338235289, 0, 0, 0)
+LoginUsernameText.Size = UDim2.new(0, 65, 0, 21)
+LoginUsernameText.Font = Enum.Font.GothamSemibold
+LoginUsernameText.Text = "Username"
+LoginUsernameText.TextColor3 = Color3.new(1, 1, 1)
+LoginUsernameText.TextSize = 14
+
+LoginUsernameBar.Name = "LoginUsernameBar"
+LoginUsernameBar.Parent = LoginXBottom
+LoginUsernameBar.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginUsernameBar.BorderSizePixel = 0
+LoginUsernameBar.Position = UDim2.new(0.338235289, 0, 0.129629627, 0)
+LoginUsernameBar.Size = UDim2.new(0, 65, 0, 1)
+
+LoginUserIDBar.Name = "LoginUserIDBar"
+LoginUserIDBar.Parent = LoginXBottom
+LoginUserIDBar.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginUserIDBar.BorderSizePixel = 0
+LoginUserIDBar.Position = UDim2.new(0.393589109, 0, 0.462962955, 1)
+LoginUserIDBar.Size = UDim2.new(0, 41, 0, 1)
+
+LoginUsername.Name = "LoginUsername"
+LoginUsername.Parent = LoginXBottom
+LoginUsername.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginUsername.BackgroundTransparency = 1
+LoginUsername.BorderSizePixel = 0
+LoginUsername.Position = UDim2.new(0, 0, 0.12999998, 5)
+LoginUsername.Size = UDim2.new(0, 206, 0, 21)
+LoginUsername.Font = Enum.Font.GothamSemibold
+LoginUsername.Text = ""
+LoginUsername.TextColor3 = Color3.new(1, 1, 1)
+LoginUsername.TextSize = 14
+
+LoginUserID.Name = "LoginUserID"
+LoginUserID.Parent = LoginXBottom
+LoginUserID.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginUserID.BackgroundTransparency = 1
+LoginUserID.BorderSizePixel = 0
+LoginUserID.Position = UDim2.new(0, 0, 0.475000083, 5)
+LoginUserID.Size = UDim2.new(0, 206, 0, 21)
+LoginUserID.Font = Enum.Font.GothamSemibold
+LoginUserID.Text = ""
+LoginUserID.TextColor3 = Color3.new(1, 1, 1)
+LoginUserID.TextSize = 14
+
+LoginKeyText.Name = "LoginKeyText"
+LoginKeyText.Parent = LoginXBottom
+LoginKeyText.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginKeyText.BackgroundTransparency = 1
+LoginKeyText.BorderSizePixel = 0
+LoginKeyText.Position = UDim2.new(0.393589109, 0, 0.697530866, 0)
+LoginKeyText.Size = UDim2.new(0, 42, 0, 21)
+LoginKeyText.Font = Enum.Font.GothamSemibold
+LoginKeyText.Text = "Key"
+LoginKeyText.TextColor3 = Color3.new(1, 1, 1)
+LoginKeyText.TextSize = 14
+
+LoginKeyBar.Name = "LoginKeyBar"
+LoginKeyBar.Parent = LoginXBottom
+LoginKeyBar.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginKeyBar.BorderSizePixel = 0
+LoginKeyBar.Position = UDim2.new(0.39844349, 0, 0.820987642, 1)
+LoginKeyBar.Size = UDim2.new(0, 41, 0, 1)
+
+LoginKey.Name = "LoginKey"
+LoginKey.Parent = LoginXBottom
+LoginKey.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginKey.BackgroundTransparency = 1
+LoginKey.BorderSizePixel = 0
+LoginKey.Position = UDim2.new(0, 0, 0.864197493, 0)
+LoginKey.Size = UDim2.new(0, 206, 0, 22)
+LoginKey.AutoButtonColor = false
+LoginKey.Font = Enum.Font.GothamSemibold
+LoginKey.Text = "Click on me"
+LoginKey.TextColor3 = Color3.new(1, 1, 1)
+LoginKey.TextSize = 14
+
+PassButtonCont.Name = "PassButtonCont"
+PassButtonCont.Parent = LoginXMain
+PassButtonCont.BackgroundColor3 = Color3.new(1, 1, 1)
+PassButtonCont.BackgroundTransparency = 1
+PassButtonCont.ClipsDescendants = true
+PassButtonCont.Position = UDim2.new(0.203999996, 0, 0.0799999982, 0)
+PassButtonCont.Size = UDim2.new(0, 121, 0, 42)
+PassButtonCont.Visible = false
+PassButtonCont.Image = "rbxassetid://3570695787"
+PassButtonCont.ImageColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+PassButtonCont.ScaleType = Enum.ScaleType.Slice
+PassButtonCont.SliceCenter = Rect.new(100, 100, 100, 100)
+PassButtonCont.SliceScale = 0.04
+
+PassButton.Name = "PassButton"
+PassButton.Parent = PassButtonCont
+PassButton.BackgroundColor3 = Color3.new(1, 1, 1)
+PassButton.BackgroundTransparency = 1
+PassButton.BorderSizePixel = 0
+PassButton.Position = UDim2.new(0, 0, 0.0238095243, 0)
+PassButton.Size = UDim2.new(0, 121, 0, 41)
+PassButton.AutoButtonColor = false
+PassButton.Font = Enum.Font.GothamSemibold
+PassButton.Text = "Submit"
+PassButton.TextColor3 = Color3.new(1, 1, 1)
+PassButton.TextSize = 14
+PassButton.TextTransparency = 1
+
+LoginLightEffect.Name = "LoginLightEffect"
+LoginLightEffect.Parent = PassButtonCont
+LoginLightEffect.BackgroundColor3 = Color3.new(1, 1, 1)
+LoginLightEffect.BackgroundTransparency = 1
+LoginLightEffect.Size = UDim2.new(0, 7, 0, 42)
+
+TextBoxContainer.Name = "TextBoxContainer"
+TextBoxContainer.Parent = LoginXMain
+TextBoxContainer.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+TextBoxContainer.BackgroundTransparency = 1
+TextBoxContainer.BorderSizePixel = 0
+TextBoxContainer.Position = UDim2.new(0.0985057354, 0, 0.105515569, 0)
+TextBoxContainer.Size = UDim2.new(0, 164, 0, 42)
+
+TextBox.Parent = TextBoxContainer
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox.BackgroundTransparency = 1
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0, 2, 0.214000002, 0)
+TextBox.Size = UDim2.new(0, 164, 0, 23)
+TextBox.Font = Enum.Font.GothamSemibold
+TextBox.PlaceholderColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.new(0.901961, 0, 0.313726)
+TextBox.TextSize = 13
+
+TextBoxBarBack.Name = "TextBoxBarBack"
+TextBoxBarBack.Parent = TextBoxContainer
+TextBoxBarBack.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBoxBarBack.BackgroundTransparency = 1
+TextBoxBarBack.Position = UDim2.new(0, 0, 0.761904776, 0)
+TextBoxBarBack.Size = UDim2.new(0, 164, 0, 2)
+TextBoxBarBack.Image = "rbxassetid://3570695787"
+TextBoxBarBack.ImageColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+TextBoxBarBack.ScaleType = Enum.ScaleType.Slice
+TextBoxBarBack.SliceCenter = Rect.new(100, 100, 100, 100)
+TextBoxBarBack.SliceScale = 0.04
+
+TextBoxBarRed.Name = "TextBoxBarRed"
+TextBoxBarRed.Parent = TextBoxBarBack
+TextBoxBarRed.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBoxBarRed.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBoxBarRed.BackgroundTransparency = 1
+TextBoxBarRed.Position = UDim2.new(0.5, 0, -0.738000035, 2)
+TextBoxBarRed.Size = UDim2.new(0, 0, 0, 2)
+TextBoxBarRed.Image = "rbxassetid://3570695787"
+TextBoxBarRed.ImageColor3 = Color3.new(1, 0, 0.313726)
+TextBoxBarRed.ScaleType = Enum.ScaleType.Slice
+TextBoxBarRed.SliceCenter = Rect.new(100, 100, 100, 100)
+TextBoxBarRed.SliceScale = 0.04
+
+TextBoxText.Name = "TextBoxText"
+TextBoxText.Parent = TextBoxContainer
+TextBoxText.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBoxText.BackgroundTransparency = 1
+TextBoxText.BorderSizePixel = 0
+TextBoxText.Position = UDim2.new(-0.00100000005, -1, -0.119000003, 14)
+TextBoxText.Size = UDim2.new(0, 46, 0, 22)
+TextBoxText.Font = Enum.Font.Gotham
+TextBoxText.Text = "Key here"
+TextBoxText.TextColor3 = Color3.new(1, 0, 0.313726)
+TextBoxText.TextSize = 10
+TextBoxText.TextTransparency = 1
+
+Games.Name = "Games"
+Games.Parent = LoginXMain
+Games.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Games.BackgroundTransparency = 1.000
+Games.BorderSizePixel = 0
+Games.Position = UDim2.new(-0.902999997, 0, 1.36000001, 0)
+Games.Size = UDim2.new(0, 174, 0, 152)
+Games.Image = "rbxassetid://3570695787"
+Games.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Games.ScaleType = Enum.ScaleType.Slice
+Games.SliceCenter = Rect.new(100, 100, 100, 100)
+Games.SliceScale = 0.060
+
+AvailableGames.Name = "AvailableGames"
+AvailableGames.Parent = Games
+AvailableGames.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AvailableGames.BackgroundTransparency = 1.000
+AvailableGames.BorderSizePixel = 0
+AvailableGames.Size = UDim2.new(0, 174, 0, 33)
+AvailableGames.Font = Enum.Font.GothamSemibold
+AvailableGames.Text = "Available Games"
+AvailableGames.TextColor3 = Color3.fromRGB(255, 255, 255)
+AvailableGames.TextSize = 14.000
+
+AvailableGamesBar.Name = "AvailableGamesBar"
+AvailableGamesBar.Parent = Games
+AvailableGamesBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AvailableGamesBar.BorderSizePixel = 0
+AvailableGamesBar.Position = UDim2.new(0.275999993, 0, 0.171000004, 3)
+AvailableGamesBar.Size = UDim2.new(0, 80, 0, 1)
+
+Game1.Name = "Game1"
+Game1.Parent = Games
+Game1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game1.BackgroundTransparency = 1.000
+Game1.BorderSizePixel = 0
+Game1.Position = UDim2.new(0.0242162235, 0, 0.217105269, 0)
+Game1.Size = UDim2.new(0, 169, 0, 33)
+Game1.Font = Enum.Font.GothamSemibold
+Game1.Text = "Phantom Forces"
+Game1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game1.TextSize = 14.000
+Game1.TextXAlignment = Enum.TextXAlignment.Left
+
+Game1OK.Name = "Game1OK"
+Game1OK.Parent = Game1
+Game1OK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game1OK.BackgroundTransparency = 1.000
+Game1OK.BorderSizePixel = 0
+Game1OK.Position = UDim2.new(0.79289943, 0, 0.181818187, 0)
+Game1OK.Size = UDim2.new(0, 29, 0, 21)
+Game1OK.Image = "rbxassetid://5255074132"
+Game1OK.ImageColor3 = Color3.fromRGB(0, 255, 172)
+
+Game2.Name = "Game2"
+Game2.Parent = Games
+Game2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game2.BackgroundTransparency = 1.000
+Game2.BorderSizePixel = 0
+Game2.Position = UDim2.new(0.0242162235, 0, 0.388157904, 0)
+Game2.Size = UDim2.new(0, 169, 0, 33)
+Game2.Font = Enum.Font.GothamSemibold
+Game2.Text = "Blood Moon"
+Game2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game2.TextSize = 14.000
+Game2.TextXAlignment = Enum.TextXAlignment.Left
+
+Game2OK.Name = "Game2OK"
+Game2OK.Parent = Game2
+Game2OK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game2OK.BackgroundTransparency = 1.000
+Game2OK.BorderSizePixel = 0
+Game2OK.Position = UDim2.new(0.79289943, 0, 0.181818187, 0)
+Game2OK.Size = UDim2.new(0, 29, 0, 21)
+Game2OK.Image = "rbxassetid://5255074132"
+Game2OK.ImageColor3 = Color3.fromRGB(0, 255, 172)
+
+Game3.Name = "Game3"
+Game3.Parent = Games
+Game3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game3.BackgroundTransparency = 1.000
+Game3.BorderSizePixel = 0
+Game3.Position = UDim2.new(0.0242162235, 0, 0.559210539, 0)
+Game3.Size = UDim2.new(0, 169, 0, 33)
+Game3.Font = Enum.Font.GothamSemibold
+Game3.Text = "Arsenal"
+Game3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game3.TextSize = 14.000
+Game3.TextXAlignment = Enum.TextXAlignment.Left
+
+Game3WO.Name = "Game3WO"
+Game3WO.Parent = Game3
+Game3WO.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game3WO.BackgroundTransparency = 1.000
+Game3WO.BorderSizePixel = 0
+Game3WO.Position = UDim2.new(0.79289943, 0, 0.181818187, 0)
+Game3WO.Size = UDim2.new(0, 29, 0, 21)
+Game3WO.Image = "rbxassetid://5255075297"
+Game3WO.ImageColor3 = Color3.fromRGB(255, 0, 76)
+
+InfoActualGame.Name = "InfoActualGame"
+InfoActualGame.Parent = Games
+InfoActualGame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfoActualGame.BackgroundTransparency = 1.000
+InfoActualGame.BorderSizePixel = 0
+InfoActualGame.Position = UDim2.new(0.0240000002, 0, 0.848999977, 3)
+InfoActualGame.Size = UDim2.new(0, 169, 0, 22)
+InfoActualGame.Font = Enum.Font.GothamSemibold
+InfoActualGame.Text = "This game is not supported"
+InfoActualGame.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfoActualGame.TextSize = 12.000
+
+Changelog.Name = "Changelog"
+Changelog.Parent = LoginXMain
+Changelog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Changelog.BackgroundTransparency = 1.000
+Changelog.BorderSizePixel = 0
+Changelog.Position = UDim2.new(-0.902912617, 0, 1.17999995, 0)
+Changelog.Size = UDim2.new(0, 174, 0, 162)
+Changelog.Image = "rbxassetid://3570695787"
+Changelog.ImageColor3 = Color3.fromRGB(35, 35, 35)
+Changelog.ScaleType = Enum.ScaleType.Slice
+Changelog.SliceCenter = Rect.new(100, 100, 100, 100)
+Changelog.SliceScale = 0.060
+
+ChangelogHeader.Name = "ChangelogHeader"
+ChangelogHeader.Parent = Changelog
+ChangelogHeader.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogHeader.BackgroundTransparency = 1.000
+ChangelogHeader.BorderSizePixel = 0
+ChangelogHeader.Position = UDim2.new(-0.000613859331, 0, -0.00617283955, 0)
+ChangelogHeader.Size = UDim2.new(0, 174, 0, 23)
+ChangelogHeader.Image = "rbxassetid://3570695787"
+ChangelogHeader.ImageColor3 = Color3.fromRGB(10, 10, 10)
+ChangelogHeader.ScaleType = Enum.ScaleType.Slice
+ChangelogHeader.SliceCenter = Rect.new(100, 100, 100, 100)
+ChangelogHeader.SliceScale = 0.060
+
+HeaderBottom.Name = "HeaderBottom"
+HeaderBottom.Parent = ChangelogHeader
+HeaderBottom.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+HeaderBottom.BorderSizePixel = 0
+HeaderBottom.Position = UDim2.new(0, 0, 0.568437636, 0)
+HeaderBottom.Size = UDim2.new(0, 174, 0, 13)
+
+HeaderImage.Name = "HeaderImage"
+HeaderImage.Parent = ChangelogHeader
+HeaderImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HeaderImage.BackgroundTransparency = 1.000
+HeaderImage.BorderSizePixel = 0
+HeaderImage.Position = UDim2.new(0.0399999991, -4, 0.216999993, -1)
+HeaderImage.Size = UDim2.new(0, 20, 0, 18)
+HeaderImage.Image = "rbxassetid://5102231149"
+
+OnOffChangelog.Name = "OnOffChangelog"
+OnOffChangelog.Parent = Changelog
+OnOffChangelog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OnOffChangelog.Position = UDim2.new(0.453999996, 0, 0.264999986, -4)
+OnOffChangelog.Size = UDim2.new(0, 6, 0, 2)
+
+ChangelogText.Name = "ChangelogText"
+ChangelogText.Parent = Changelog
+ChangelogText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogText.BackgroundTransparency = 1.000
+ChangelogText.BorderSizePixel = 0
+ChangelogText.Position = UDim2.new(0.0236023758, 0, 0.175791651, 0)
+ChangelogText.Size = UDim2.new(0, 78, 0, 16)
+ChangelogText.Font = Enum.Font.GothamSemibold
+ChangelogText.Text = "Changelog"
+ChangelogText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangelogText.TextSize = 14.000
+ChangelogText.TextXAlignment = Enum.TextXAlignment.Left
+
+Change1.Name = "Change1"
+Change1.Parent = Changelog
+Change1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Change1.BackgroundTransparency = 1.000
+Change1.BorderSizePixel = 0
+Change1.Position = UDim2.new(0.0236023646, 0, 0.373322487, 0)
+Change1.Size = UDim2.new(0, 169, 0, 16)
+Change1.Font = Enum.Font.GothamSemibold
+Change1.Text = "- Killer X [BETA]"
+Change1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Change1.TextSize = 14.000
+Change1.TextXAlignment = Enum.TextXAlignment.Left
+
+GamesButton.Name = "GamesButton"
+GamesButton.Parent = Changelog
+GamesButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamesButton.BackgroundTransparency = 1.000
+GamesButton.BorderSizePixel = 0
+GamesButton.Position = UDim2.new(0.0517241396, 0, 0.722222209, 0)
+GamesButton.Size = UDim2.new(0, 154, 0, 34)
+GamesButton.Image = "rbxassetid://3570695787"
+GamesButton.ImageColor3 = Color3.fromRGB(10, 10, 10)
+GamesButton.ScaleType = Enum.ScaleType.Slice
+GamesButton.SliceCenter = Rect.new(100, 100, 100, 100)
+GamesButton.SliceScale = 0.040
+
+GamesButtonText.Name = "GamesButtonText"
+GamesButtonText.Parent = GamesButton
+GamesButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GamesButtonText.BackgroundTransparency = 1.000
+GamesButtonText.BorderSizePixel = 0
+GamesButtonText.Size = UDim2.new(0, 154, 0, 34)
+GamesButtonText.Font = Enum.Font.GothamSemibold
+GamesButtonText.Text = "Available Games"
+GamesButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+GamesButtonText.TextSize = 14.000
+
+Human.Name = "Human"
+Human.Parent = LoginX
+Human.AnchorPoint = Vector2.new(0.5, 0.5)
+Human.BackgroundColor3 = Color3.new(1, 1, 1)
+Human.BackgroundTransparency = 1
+Human.BorderSizePixel = 0
+Human.Position = UDim2.new(0.5, 0, 0.5, 0)
+Human.Image = "rbxassetid://5165117815"
+
+Shark.Name = "Shark"
+Shark.Parent = LoginX
+Shark.AnchorPoint = Vector2.new(0.620000005, 0.550000012)
+Shark.BackgroundColor3 = Color3.new(1, 1, 1)
+Shark.BackgroundTransparency = 1
+Shark.BorderSizePixel = 0
+Shark.Position = UDim2.new(-0.0700781345, 0, 0.510999978, 0)
+Shark.Rotation = -11
+Shark.Size = UDim2.new(0, 282, 0, 184)
+Shark.Image = "rbxassetid://5155908512"
+
+LoginNotif.Name = "LoginNotif"
+LoginNotif.Parent = LoginX
+LoginNotif.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginNotif.BackgroundTransparency = 1.000
+LoginNotif.BorderSizePixel = 0
+LoginNotif.Position = UDim2.new(1.10000002, 0, 0.409999996, 0)
+LoginNotif.Size = UDim2.new(0, 375, 0, 114)
+LoginNotif.Image = "rbxassetid://3570695787"
+LoginNotif.ImageColor3 = Color3.fromRGB(40, 40, 40)
+LoginNotif.ScaleType = Enum.ScaleType.Slice
+LoginNotif.SliceCenter = Rect.new(100, 100, 100, 100)
+LoginNotif.SliceScale = 0.060
+
+LoginNotifBottom.Name = "LoginNotifBottom"
+LoginNotifBottom.Parent = LoginNotif
+LoginNotifBottom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginNotifBottom.BackgroundTransparency = 1.000
+LoginNotifBottom.BorderSizePixel = 0
+LoginNotifBottom.Position = UDim2.new(0, 0, 0.740907073, 0)
+LoginNotifBottom.Size = UDim2.new(0, 375, 0, 31)
+LoginNotifBottom.Image = "rbxassetid://3570695787"
+LoginNotifBottom.ImageColor3 = Color3.fromRGB(30, 30, 30)
+LoginNotifBottom.ScaleType = Enum.ScaleType.Slice
+LoginNotifBottom.SliceCenter = Rect.new(100, 100, 100, 100)
+LoginNotifBottom.SliceScale = 0.060
+
+LoginBottomNormal.Name = "LoginBottomNormal"
+LoginBottomNormal.Parent = LoginNotifBottom
+LoginBottomNormal.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+LoginBottomNormal.BorderSizePixel = 0
+LoginBottomNormal.Position = UDim2.new(0, 0, -0.410017431, 0)
+LoginBottomNormal.Size = UDim2.new(0, 375, 0, 25)
+
+NotifLogo.Name = "NotifLogo"
+NotifLogo.Parent = LoginNotif
+NotifLogo.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+NotifLogo.BorderSizePixel = 0
+NotifLogo.Position = UDim2.new(0.050999999, 0, 0.166999996, 2)
+NotifLogo.Size = UDim2.new(0, 75, 0, 75)
+
+KillerXLogo.Name = "KillerXLogo"
+KillerXLogo.Parent = NotifLogo
+KillerXLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KillerXLogo.BackgroundTransparency = 1.000
+KillerXLogo.BorderSizePixel = 0
+KillerXLogo.Position = UDim2.new(0.0399999991, 0, 0.0399999954, 0)
+KillerXLogo.Size = UDim2.new(0, 69, 0, 69)
+KillerXLogo.Image = "rbxassetid://5259592952"
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 105)), ColorSequenceKeypoint.new(0.41, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.60, Color3.fromRGB(163, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 102))}
+UIGradient.Parent = KillerXLogo
+
+NotifPress.Name = "NotifPress"
+NotifPress.Parent = LoginNotif
+NotifPress.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotifPress.BackgroundTransparency = 1.000
+NotifPress.BorderSizePixel = 0
+NotifPress.Position = UDim2.new(0.312000006, 0, 0.629411101, 0)
+NotifPress.Size = UDim2.new(0, 258, 0, 43)
+NotifPress.Font = Enum.Font.GothamBold
+NotifPress.Text = "Press R        to Open - Close"
+NotifPress.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotifPress.TextSize = 14.000
+NotifPress.TextXAlignment = Enum.TextXAlignment.Left
+
+CTRLLogo.Name = "CTRLLogo"
+CTRLLogo.Parent = LoginNotif
+CTRLLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CTRLLogo.BackgroundTransparency = 1.000
+CTRLLogo.BorderSizePixel = 0
+CTRLLogo.Position = UDim2.new(0.451000005, 1, 0.731999993, 2)
+CTRLLogo.Size = UDim2.new(0, 23, 0, 16)
+CTRLLogo.Image = "rbxassetid://5259883982"
+
+NotifTitle.Name = "NotifTitle"
+NotifTitle.Parent = LoginNotif
+NotifTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotifTitle.BackgroundTransparency = 1.000
+NotifTitle.BorderSizePixel = 0
+NotifTitle.Position = UDim2.new(0.312000006, 0, 0.105596446, 0)
+NotifTitle.Size = UDim2.new(0, 258, 0, 24)
+NotifTitle.Font = Enum.Font.GothamBlack
+NotifTitle.Text = "Keep the desire to cheat"
+NotifTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotifTitle.TextSize = 14.000
+NotifTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+NotifInfo.Name = "NotifInfo"
+NotifInfo.Parent = LoginNotif
+NotifInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotifInfo.BackgroundTransparency = 1.000
+NotifInfo.BorderSizePixel = 0
+NotifInfo.Position = UDim2.new(0.312000006, 0, 0.281035036, 0)
+NotifInfo.Size = UDim2.new(0, 258, 0, 24)
+NotifInfo.Font = Enum.Font.GothamSemibold
+NotifInfo.Text = "Enjoy Killer X while you're gaming"
+NotifInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotifInfo.TextSize = 14.000
+NotifInfo.TextXAlignment = Enum.TextXAlignment.Left
+local plr = game.Players.LocalPlayer
+local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://5155905830"
+ 
+if not sound.IsLoaded then
+	sound.Loaded:wait()
+end
+local human = Human
+local shark = Shark
+local blur = Instance.new("BlurEffect")
+
+blur.Enabled = true
+blur.Size = 0
+blur.Parent = workspace.CurrentCamera
+wait(1)
+sound:Play()
+game:GetService("TweenService"):Create(sound, TweenInfo.new(1), {Volume = 0.5}):Play()
+human:TweenSize(UDim2.new(0,56, 0,56), "Out", "Elastic", 0.5)
+shark:TweenPosition(UDim2.new(0.494,0, 0.511,0), "Out", "Quart", 5)
+game:GetService("TweenService"):Create(blur, TweenInfo.new(3), {Size = 20}):Play()
+wait(5)
+human:TweenSize(UDim2.new(0,0, 0,0), "Out", "Quint", 0.1)
+shark:TweenSize(UDim2.new(0,0, 0,0), "Out", "Quint", 0.5)
+game:GetService("TweenService"):Create(blur, TweenInfo.new(1.5), {Size = 0}):Play()
+game:GetService("TweenService"):Create(sound, TweenInfo.new(1), {Volume = 0}):Play()
+wait(2)
+human.Visible = false
+shark.Visible = false
+blur.Enabled = false
+LoginXMain:TweenPosition(UDim2.new(0.433,0, 0.327,0), "Out", "Quint", 1, true)
+
+LoginUsername.Text = plr.Name
+LoginUserID.Text = plr.UserId
+
+LoginKey.MouseButton1Click:Connect(function()
+	LoginKey.Text = "Discord set to clipboard."
+	game:GetService("TweenService"):Create(LoginKey, TweenInfo.new(1), {TextColor3 = Color3.fromRGB(255, 0, 80)}):Play()
+	wait(2)
+	LoginKey.Text = "Click on me"
+	game:GetService("TweenService"):Create(LoginKey, TweenInfo.new(1), {TextColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	
+	setclipboard("https://discord.gg/BRTPh8F")
+end)
+
+-- Killer X server invite : https://discord.gg/BRTPh8F
+
+PassButton.MouseButton1Down:Connect(function()
+	game:GetService("TweenService"):Create(PassButtonCont, TweenInfo.new(0.2), {ImageColor3 = Color3.fromRGB(55, 55, 55)}):Play()
+end)
+PassButton.MouseButton1Up:Connect(function()
+	game:GetService("TweenService"):Create(PassButtonCont, TweenInfo.new(0.2), {ImageColor3 = Color3.fromRGB(15, 15, 15)}):Play()
+end)
+PassButton.MouseEnter:Connect(function()
+	game:GetService("TweenService"):Create(PassButtonCont, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(15, 15, 15)}):Play()
+end)
+PassButton.MouseLeave:Connect(function()
+	game:GetService("TweenService"):Create(PassButtonCont, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(35, 35, 35)}):Play()
+end)
+
+local players = game:GetService("Players")
+PassButton.MouseButton1Click:Connect(function()
+	game:GetService("TweenService"):Create(LoginLightEffect, TweenInfo.new(0.1), {BackgroundTransparency = 0}):Play()
+	LoginLightEffect:TweenPosition(UDim2.new(0.941,0, 0,0), "Out", "Quart", 0.8, true)
+	LoginLightEffect:TweenSize(UDim2.new(0,14, 0,42), "Out", "Quart", 0.4, true)
+	wait(0.1)
+	LoginLightEffect:TweenSize(UDim2.new(0,7, 0,42), "Out", "Quart", 0.4, true)
+	wait(0.15)
+	game:GetService("TweenService"):Create(LoginLightEffect, TweenInfo.new(0.1), {BackgroundTransparency = 1}):Play()
+	wait(0.2)
+	LoginLightEffect:TweenPosition(UDim2.new(0,0, 0,0), "Out", "Quart", 0.1, true)
+		if game.PlaceId == 292439477 then
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/Quxkka/KillerForcesV1/master/KillerForcesV1.lua'),true))()
+	LoginXMain:TweenPosition(UDim2.new(0.433,0, 1.1,0), "Out", "Quart", 0.6, true)
+	wait(0.6)
+	LoginXMain.Visible = false
+	LoginXMain:Destroy()
+
+elseif game.PlaceId == 961409234 then
+					loadstring(game:HttpGet(('https://raw.githubusercontent.com/Quxkka/KillerMoonV1/master/KillerMoonV1.lua'),true))()
+					LoginXMain:TweenPosition(UDim2.new(0.433,0, 1.1,0), "Out", "Quart", 0.6, true)
+	wait(0.6)
+	LoginXMain.Visible = false
+	LoginXMain:Destroy()
+					end
+end)
+
+local redbar = TextBoxBarRed
+local textboxtext = TextBoxText
+local textbox = TextBox
+local text = TextBox.Text
+
+textbox.MouseEnter:connect(function()
+	redbar:TweenSize(UDim2.new(0,164, 0,2), "Out", "Quint", 0.5, true)
+	game:GetService("TweenService"):Create(textboxtext, TweenInfo.new(0.3), {TextTransparency = 0}):Play()
+	textboxtext:TweenPosition(UDim2.new(-0.001,-1, -0.048,-2), "Out", "Quint", 0.6, true)
+end)
+textbox.MouseLeave:connect(function()
+	textboxtext:TweenPosition(UDim2.new(-0.001,-1, -0.048,14), "Out", "Quint", 0.6, true)
+	game:GetService("TweenService"):Create(textboxtext, TweenInfo.new(0.3), {TextTransparency = 1}):Play()
+	redbar:TweenSize(UDim2.new(0,0, 0,2), "Out", "Quint", 0.5, true)
+end)
+
+
+local passbox = TextBox
+local buttoncont = PassButtonCont
+local subbtn = PassButton
+local loginbottom = LoginXBottom
+
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.InputBegan:connect(function(keyCode)
+	if keyCode.keyCode == Enum.KeyCode.Return then
+		if passbox.Text == "" then
+			buttoncont:TweenPosition(UDim2.new(0.204,0, 0.08,0), "Out", "Quint", 0.5, true)
+	loginbottom:TweenPosition(UDim2.new(0,0, 1.18,0), "Out", "Quint", 0.5, true)
+	game:GetService("TweenService"):Create(subbtn, TweenInfo.new(0.3), {TextTransparency = 1}):Play()
+	wait(0.25)
+			buttoncont.Visible = false
+		elseif passbox.Text == "KillerXBetaa" then
+			buttoncont.Visible = true
+	game:GetService("TweenService"):Create(subbtn, TweenInfo.new(0.3), {TextTransparency = 0}):Play()
+	buttoncont:TweenPosition(UDim2.new(0.204,0, 1.16,0), "Out", "Quint", 0.5, true)
+			loginbottom:TweenPosition(UDim2.new(0,0, 2.16,0), "Out", "Quint", 0.5, true)
+			passbox:CaptureFocus()
+		end
+	end
+end)
+
+local UserInputService = game:GetService("UserInputService")
+local loginxmain = LoginXMain
+local toggled = false
+
+UserInputService.InputBegan:connect(function(keyCode)
+	if keyCode.keyCode == Enum.KeyCode.RightControl then
+		if toggled then
+			loginxmain:TweenPosition(UDim2.new(0.433,0, 0.327,0), "Out", "Quart", 0.6, true)
+			toggled = false
+		else
+			toggled = true
+			loginxmain:TweenPosition(UDim2.new(0.433,0, 1.1,0), "Out", "Quart", 0.6, true)
+		end
+	end
+end)
+
+local gameson = false
+	GamesButtonText.MouseButton1Click:Connect(function()
+		if gameson == false then
+			Games:TweenPosition(UDim2.new(-0.903,0, 4.62,0), "Out", "Quart", 0.6, true)
+			gameson = true
+		else
+			Games:TweenPosition(UDim2.new(-0.903,0, 1.36,0), "Out", "Quart", 0.6, true)
+			gameson = false
+		end
+	end)
+
+local supported = {
+		961409234,
+		292439477
+	}
+	for i, support in pairs(supported) do
+	if game.PlaceId == support then
+		InfoActualGame.Text = "This game is supported."
+	elseif game.PlaceId == not support then
+		InfoActualGame.Text = "This game is not supported"
+		end
+end
+
+spawn(function()
+while wait(0.5) do
+		OnOffChangelog.Visible = true
+		wait(0.5)
+		OnOffChangelog.Visible = false
+end
+end)
+
+LoginNotif:TweenPosition(UDim2.new(0.74,0, 0.41,0), "Out", "Sine", 2, true)
+	wait(8)
+	LoginNotif:TweenPosition(UDim2.new(1.1,0, 0.41,0), "Out", "Sine", 2, true)
